@@ -1,30 +1,25 @@
-gsap.from("#page1 #box",{
-    scale:0,
-    delay:1,
-    duration:2,
-    rotate:360
+const menu=document.querySelector("#menu")
+const close=document.querySelector("#close")
+
+var tl=gsap.timeline()
+
+tl.to("#sideber",{
+  right:0,
+  duration:0.5
 })
 
-gsap.from("#page2 #box",{
-    scale:0,
-    delay:1,
-    duration:2,
-    rotate:360,
-    // scrollTrigger:"#page2 #box"
-    scrollTrigger:{
-        trigger:"#page2 #box",
-        scroller:"body",
-        markers:true,
-        scrub:true
-        // scrub:2
-
-    }
+tl.to("#menu li",{
+  duration:1,
+  stagger:0.3,
+  opacity:1
 })
 
-gsap.from("#page3 #box",{
-    scale:0,
-    delay:1,
-    duration:2,
-    rotate:360,
-    
+tl.pause()
+
+menu.addEventListener("click",function(){
+    tl.play()
+})
+
+close.addEventListener("click",function(){
+    tl.reverse()
 })
