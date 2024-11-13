@@ -1,25 +1,26 @@
-const menu=document.querySelector("#menu")
-const close=document.querySelector("#close")
+function BrackText(){
+const h1Text=document.querySelector("h1")
+const h1Textt=h1Text.textContent
+const splittedText=h1Textt.split("")
 
-var tl=gsap.timeline()
+var clutter=""
 
-tl.to("#sideber",{
-  right:0,
-  duration:0.5
+splittedText.forEach(function(elem){
+    clutter += `<span>${elem}</span>`
 })
 
-tl.to("#menu li",{
-  duration:1,
-  stagger:0.3,
-  opacity:1
-})
 
-tl.pause()
+h1Text.innerHTML=clutter
+console.log(clutter)
+}
 
-menu.addEventListener("click",function(){
-    tl.play()
-})
+BrackText()
 
-close.addEventListener("click",function(){
-    tl.reverse()
+
+gsap.from("h1 span",{
+    y:100,
+    opacity:0,
+    duration:1,
+    delay:0.5,
+    stagger:0.3
 })
