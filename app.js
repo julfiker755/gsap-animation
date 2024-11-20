@@ -1,26 +1,57 @@
-function BrackText(){
-const h1Text=document.querySelector("h1")
-const h1Textt=h1Text.textContent
-const splittedText=h1Textt.split("")
+function pageAnimation(){
+    const tl=gsap.timeline()
 
-var clutter=""
-
-splittedText.forEach(function(elem){
-    clutter += `<span>${elem}</span>`
+tl.from("nav h1,nav ul li",{
+    y:-10,
+    opacity:0,
+    delay:1,
+    duration:0.8,
+    stagger:0.15
 })
 
+tl.from(".home p",{
+  x:-200,
+  opacity:0,
+  duration:0.5,
+  stagger:0.1
+},"-=0.3")
 
-h1Text.innerHTML=clutter
-console.log(clutter)
+tl.from(".home button",{
+   opacity:0,
+   duration:0.1
+})
+
+tl.from(".home2 img",{
+   opacity:0,
+   duration:0.1
+},"-=0.3")
+
+
+tl.from(".socil_img img",{
+   opacity:0,
+   y:30,
+   stagger:0.15,
+   duration:0.6
+})
 }
 
-BrackText()
+pageAnimation()
 
 
-gsap.from("h1 span",{
-    y:100,
-    opacity:0,
-    duration:1,
-    delay:0.5,
-    stagger:0.3
-})
+
+function pageAnimation1(){
+    var tl2=gsap.timeline({
+        scrollTrigger:{
+            trigger:".service div",
+            scroller:"body",
+            start:"top 50%"
+        }
+    })
+    
+    tl2.from(".service div",{
+        x:-300,
+        opacity:0,
+        duration:1,
+    })
+}
+pageAnimation1()

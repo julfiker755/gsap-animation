@@ -8,14 +8,166 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
-<body>
-   <div class="grid place-items-center size-full">
-      <h1 class="text-8xl font-semibold [&>span]:inline-block">Julfiker Rahaman Jim</h1>
+<body class="container mx-auto">
+   <!-- header  -->
+    <nav class="flex  justify-between items-center py-2">
+        <h1 class="font-semibold text-2xl">Wizard2</h1>
+        <ul class="flex items-center [&>li]:font-medium space-x-4">
+            <li>About us</li>
+            <li>Services</li>
+            <li>Use Cases</li>
+            <li>Pricing</li>
+            <li>Blogs</li>
+            <li class="border border-black rounded-md px-1 py-1 cursor-pointer">Request a quote</li>
+        </ul>
+    </nav>
+ <!-- homeSlider -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 py-20">
+     <div class="home">
+         <p class="text-4xl font-semibold w-1/2">Navigating the digital landscape for success</p>
+         <p class="py-7 w-11/12">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+         <button class="bg-black text-white px-2 py-2 rounded-md">Book a consultation</button>
+     </div>
+     <div class="w-[500px] home2 mx-5">
+         <img class="w-full h-full" src="https://resloup.studio/Hero.svg"/>
+     </div>
+  </section>
+  <!-- social area button -->
+   <div class="flex socil_img gap-x-7 justify-center">
+       <img class="w-[200px] h-[60px]" src="https://static.vecteezy.com/system/resources/previews/014/018/563/non_2x/amazon-logo-on-transparent-background-free-vector.jpg"/>
+       <img class="w-[200px] h-[60px]" src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940" alt="">
+       <img class="w-[200px] h-[60px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/1280px-Shopify_logo_2018.svg.png" alt="">
+       <img class="w-[200px] h-[60px]" src="https://static.vecteezy.com/system/resources/previews/014/018/563/non_2x/amazon-logo-on-transparent-background-free-vector.jpg"/>
+       <img class="w-[200px] h-[60px]" src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940" alt="">
    </div>
+   <!-- services card -->
 
+ <div class="py-20 gap-x-10 flex">
+     <h1 class="text-3xl font-semibold bg-[#48b760] py-1 px-2 rounded-md">Services</h1>
+     <p class="w-[70%]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt soluta facilis optio veniam, aliquid et inventore. Excepturi quas laboriosam eius aut corporis doloribus cumque? Dolor enim vitae velit esse recusandae?</p>
+ </div>
 
+ <div class="grid service grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow border border-black flex justify-between items-center text-black">
+      <div class="flex flex-col justify-center items-start gap-[93px]">
+        <div class="flex flex-col justify-start items-start">
+          <div class="px-[7px]  rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">Social media management</div>
+          </div>
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">
+              <p class="service--description text-xl">
+                Managing online presence through content creation, scheduling, and engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[210px] h-[170px] flex justify-center items-center">
+        <img class="hidden md:block" src="/services/01.svg" alt="Social Media Management" />
+      </div>
+    </div>
 
+    <div class="h-[310px] p-12 bg-lime rounded-[45px] shadow border border-black flex justify-between items-center text-black">
+      <div class="flex flex-col justify-center items-start gap-[93px]">
+        <div class="flex flex-col justify-start items-start">
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">AI Chatbot</div>
+          </div>
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">
+              <p class="service--description text-xl">
+                Boost sales with AI chatbots on Instagram, Facebook, and SMS. Automate customer support, engage users, and generate leads to drive business growth and increase revenue.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[210px] h-[170px] flex justify-center items-center">
+        <img class="hidden md:block" src="/services/02.svg" alt="AI Chatbot" />
+      </div>
+    </div>
+    <div class="h-[310px] p-12 bg-black rounded-[45px] shadow border border-black flex justify-between items-center text-white">
+      <div class="flex flex-col justify-center items-start gap-[93px]">
+        <div class="flex flex-col justify-start items-start">
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">Content Creation</div>
+          </div>
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">
+              <p class="service--description text-xl">
+                Create personalized content tailored to your audience's preferences using AI insights to boost engagement and relevance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[210px] h-[170px] flex justify-center items-center">
+        <img class="hidden md:block" src="/services/03.svg" alt="Content Creation" />
+      </div>
+    </div>
 
+    <div class="h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow border border-black flex justify-between items-center text-black">
+      <div class="flex flex-col justify-center items-start gap-[93px]">
+        <div class="flex flex-col justify-start items-start">
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">Lead Generation</div>
+          </div>
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">
+              <p class="service--description text-xl">
+                Leverage AI for automated, personalized outreach to engage potential leads and drive conversions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[210px] h-[170px] flex justify-center items-center">
+        <img class="hidden md:block" src="/services/04.svg" alt="Lead Generation" />
+      </div>
+    </div>
+
+    <div class="h-[310px] p-12 bg-lime rounded-[45px] shadow border border-black flex justify-between items-center text-black">
+      <div class="flex flex-col justify-center items-start gap-[93px]">
+        <div class="flex flex-col justify-start items-start">
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">Targeted Advertising</div>
+          </div>
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">
+              <p class="service--description text-xl">
+                Amplify your reach with our targeted social media advertising. We craft and manage ads on platforms like Facebook, Instagram, and more to drive traffic, increase engagement, and boost conversions for your brand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[210px] h-[170px] flex justify-center items-center">
+        <img class="hidden md:block" src="/services/05.svg" alt="Targeted Advertising" />
+      </div>
+    </div>
+
+    <div class="h-[310px] p-12 bg-black rounded-[45px] shadow border border-black flex justify-between items-center text-white">
+      <div class="flex flex-col justify-center items-start gap-[93px]">
+        <div class="flex flex-col justify-start items-start">
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">Predictive Analytics</div>
+          </div>
+          <div class="px-[7px] none rounded-[7px] flex flex-col justify-start items-start gap-2.5">
+            <div class="text-3xl font-medium">
+              <p class="service--description text-xl">
+                Leverage AI for predictive analytics. Anticipate future trends and customer behaviors to stay ahead and make data-driven decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[210px] h-[170px] flex justify-center items-center">
+        <img class="hidden md:block" src="/services/06.svg" alt="Predictive Analytics" />
+      </div>
+    </div>
+  </div>
+  
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
